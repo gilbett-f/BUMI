@@ -1,0 +1,213 @@
+{
+  "startup": {
+    "name": "BUMI",
+    "tagline": "Bersama Melawan Perubahan Iklim",
+    "logo": "-",
+    "heroImage": "assets/hero-background.jpg",
+    "aboutImage": "assets/about-image.webp",
+    "heroTitle": "Bersama Membangun Masa Depan yang Berkelanjutan",
+    "heroDescription": "isi teks",
+    "longDescription": "BUMI berfokus pada solusi inovatif: reforestasi, monitoring emisi, edukasi, dan energi terbarukan. isi bagian ini bisa dilanjutkan sepanjang mungkin tanpa takut lewat lewat ke section lain, karna yaa disini pakenya innerHTML dari javascript dan udah di styling. bukan html biasa yang statis awokawokawokawokawokawokaowkaok. ini contohnya kalo dipanjangin. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa tttttttttttttttttttttttttttttttttttttt uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm. liat, sectionnya expand sendiri."
+  },
+
+  "sections": {
+    "definition": {
+      "id": "definisi",
+      "title": "Apa Itu Pemanasan Global?",
+      "content": "Pemanasan global adalah fenomena meningkatnya suhu rata-rata atmosfer, laut, dan daratan Bumi. Meningkatnya gas rumah kaca menyebabkan perubahan iklim.",
+      "image": "assets/def-image.webp",
+      "imageAlt": "Grafik peningkatan suhu bumi",
+
+      "stats": [
+        {
+          "number": "1.1°C",
+          "label": "Kenaikan suhu sejak zaman pra-industri",
+          "detail": "Rata-rata permukaan global naik sekitar 1.1°C sejak era pra-industri."
+        },
+        {
+          "number": "419 ppm",
+          "label": "Konsentrasi CO2 (2023)",
+          "detail": "Konsentrasi CO2 atmosfer mencapai sekitar 419 ppm pada tahun 2023."
+        },
+        {
+          "number": "23 cm",
+          "label": "Kenaikan permukaan laut sejak 1880",
+          "detail": "Permukaan laut meningkat sekitar 23 cm sejak 1880."
+        },
+        {
+          "number": ">50",
+          "label": "Peningkatan kejadian cuaca ekstrem",
+          "detail": "Frekuensi banjir, badai, dan gelombang panas meningkat tajam dalam 30 tahun terakhir."
+        },
+        {
+          "number": ">30%",
+          "label": "Hilangnya habitat laut",
+          "detail": "Diperkirakan 30% habitat laut mengalami degradasi karena pemanasan dan pengasaman."
+        },
+        {
+          "number": ">1000",
+          "label": "Spesies terancam per dekade",
+          "detail": "Jumlah spesies yang terancam punah meningkat karena kerusakan ekosistem."
+        }
+      ]
+    },
+
+    "causes": {
+      "id": "penyebab",
+      "title": "Penyebab Pemanasan Global",
+      "content": "Berbagai aktivitas manusia berkontribusi pada peningkatan gas rumah kaca.",
+
+      "causes": [
+        {
+          "title": "Pembakaran Bahan Bakar Fosil",
+          "description": "batubara, minyak, dan gas.",
+          "percentage": "75%",
+          "image": "assets/pembakaran-fosil.avif",
+          "detail": "Bahan bakar fosil masih menjadi sumber energi utama di berbagai sektor kehidupan, mulai dari transportasi, industri, hingga pembangkit listrik. Sayangnya, pembakaran bahan bakar fosil menghasilkan emisi gas rumah kaca yang berkontribusi besar terhadap pemanasan global. Semakin tinggi ketergantungan manusia pada bahan bakar fosil, semakin banyak emisi yang dilepaskan ke atmosfer. Gas-gas ini menjebak panas matahari di dalam bumi, menyebabkan peningkatan suhu global secara perlahan namun terus-menerus. Dampaknya dapat dirasakan dalam bentuk cuaca ekstrem, mencairnya es di kutub, serta naiknya permukaan air laut."
+        },
+        {
+          "title": "Deforestasi",
+          "description": "Penebangan hutan mengurangi penyerap karbon.",
+          "percentage": "10%",
+          "image": "assets/deforestasi.jpg",
+          "detail": "Deforestasi atau penggundulan hutan merupakan salah satu penyebab utama meningkatnya pemanasan global. Hutan berperan penting sebagai penyerap karbon dioksida (CO₂) dari atmosfer melalui proses fotosintesis. Ketika hutan ditebang atau dibakar, kemampuan alam untuk menyerap gas rumah kaca menjadi berkurang secara drastis. Selain mengurangi jumlah penyerap karbon, deforestasi juga melepaskan karbon yang tersimpan di dalam pohon dan tanah ke udara. Aktivitas seperti pembukaan lahan untuk perkebunan, pertambangan, dan pemukiman sering kali dilakukan tanpa mempertimbangkan dampak jangka panjang terhadap lingkungan dan iklim global."
+        },
+        {
+          "title": "Pupuk Kimia",
+          "description": "Metana dan pupuk kimia menghasilkan emisi.",
+          "percentage": "10%",
+          "image": "assets/pupuk.jpg",
+          "detail": "Pupuk kimia banyak digunakan dalam sektor pertanian untuk meningkatkan hasil panen dalam waktu singkat. Namun, penggunaan pupuk kimia secara berlebihan dapat memberikan dampak negatif terhadap lingkungan dan berkontribusi pada pemanasan global. Salah satu dampaknya adalah pelepasan gas dinitrogen oksida (N₂O), yaitu gas rumah kaca yang memiliki efek pemanasan jauh lebih kuat dibandingkan karbon dioksida. Pupuk kimia juga dapat mencemari tanah dan sumber air. Limbah pupuk yang terbawa air hujan dapat merusak ekosistem perairan dan menurunkan kualitas lingkungan. Dalam jangka panjang, hal ini justru mengancam keberlanjutan sektor pertanian itu sendiri."
+        },
+        {
+          "title": "Limbah & Industri",
+          "description": "Proses industri menghasilkan gas lainnya.",
+          "percentage": "5%",
+          "image": "assets/limbah.jpg",
+          "detail": "Aktivitas industri menghasilkan berbagai jenis limbah, baik berupa gas, cair, maupun padat, yang dapat berdampak besar terhadap lingkungan. Limbah industri yang tidak dikelola dengan baik sering kali melepaskan gas rumah kaca dan zat berbahaya ke udara, air, dan tanah. Emisi dari proses produksi industri menjadi salah satu faktor yang mempercepat terjadinya pemanasan global."
+        }
+      ]
+    },
+
+    "prevention": {
+      "id": "pencegahan",
+      "title": "Pencegahan",
+      "content": "Tindakan mitigasi dan adaptasi untuk mengurangi dampak.",
+
+      "importance": [
+        {
+          "title": "Kesehatan Manusia",
+          "description": "Kurangi polusi udara dan penyakit terkait",
+          "image": "https://placehold.co/500x350?text=Health",
+          "extra": "Polusi udara berkurang → risiko penyakit pernapasan ikut menurun."
+        },
+        {
+          "title": "Ketahanan Pangan",
+          "description": "Lindungi produksi pangan dari cuaca ekstrem",
+          "image": "https://placehold.co/500x350?text=Food",
+          "extra": "Adaptasi pertanian penting untuk menghadapi perubahan pola hujan."
+        },
+        {
+          "title": "Ekosistem & Biodiversitas",
+          "description": "Melindungi habitat alami",
+          "image": "https://placehold.co/500x350?text=Biodiversity",
+          "extra": "Konservasi alam membantu menjaga rantai makanan dan ekosistem."
+        },
+        {
+          "title": "Ekonomi Berkelanjutan",
+          "description": "Lapangan kerja hijau dan investasi bersih",
+          "image": "https://placehold.co/500x350?text=Green+Economy",
+          "extra": "Investasi energi terbarukan menciptakan industri bernilai tinggi."
+        },
+        {
+          "title": "Energi Terbarukan",
+          "description": "Kurangi ketergantungan bahan bakar fosil",
+          "image": "https://placehold.co/500x350?text=Renewables",
+          "extra": "Tenaga surya, angin, dan hidro lebih ramah lingkungan dan murah dalam jangka panjang."
+        },
+        {
+          "title": "Pengelolaan Sampah",
+          "description": "Daur ulang dan bank sampah digital",
+          "image": "https://placehold.co/500x350?text=Waste+Management",
+          "extra": "Sistem pengumpulan dan daur ulang yang efisien menurunkan emisi metana dari TPA."
+        }
+      ],
+
+      "video": "https://www.youtube.com/embed/qtibq5NRUmE"
+    },
+
+    "activities": {
+      "id": "aktivitas",
+      "title": "Aktivitas Kami",
+      "content": "Program dan inisiatif yang kami jalankan.",
+      "programs": [
+        
+        {"title":"Selai Limbah Tauge",
+         "description":"Menjadikan limbah sisa tauge sebagai selai yang dapat dikonsumsi",
+         "image":"https://placehold.co/700x450?text=selita",
+         "date":"2025",
+         "impact":"1000 ton limbah tauge berkurang",
+         "link":"https://youtube.com"},
+        
+        {"title":"coming soon",
+         "description":"tunggu proyek ramah lingkungan kami yang lainnya. ayo bersama sama cegah pemanasan global. ",
+         "image":"https://placehold.co/700x450?text=coming soon",
+         "date":"-",
+         "impact":"-",
+         "link":"#"},
+
+        {"title":"coming soon",
+         "description":"tunggu proyek ramah lingkungan kami yang lainnya. ayo bersama sama cegah pemanasan global. ",
+         "image":"https://placehold.co/700x450?text=coming soon",
+         "date":"-",
+         "impact":"-",
+         "link":"#"},
+
+        {"title":"coming soon",
+         "description":"tunggu proyek ramah lingkungan kami yang lainnya. ayo bersama sama cegah pemanasan global. ",
+         "image":"https://placehold.co/700x450?text=coming soon",
+         "date":"-",
+         "impact":"-",
+         "link":"#"}
+
+      ]
+    },
+
+    "cases": {
+      "id": "studi-kasus",
+      "title": "Studi Kasus & Jurnal",
+      "content": "Kumpulan penelitian dan jurnal tentang pemanasan global.",
+      "items": [
+        {"title":"Jurnal A: Tren Suhu Global","summary":"Ringkasan penelitian tentang tren suhu global.","image":"https://placehold.co/700x450?text=Paper+1","link":"#"},
+        {"title":"Jurnal B: Dampak Laut","summary":"Pengaruh pemanasan pada ekosistem laut.","image":"https://placehold.co/700x450?text=Paper+2","link":"#"},
+        {"title":"Jurnal C: Adaptasi Pertanian","summary":"Strategi adaptasi untuk petani.","image":"https://placehold.co/700x450?text=Paper+3","link":"#"},
+        {"title":"Jurnal D: Polusi & Kesehatan","summary":"Keterkaitan polusi dan penyakit pernapasan.","image":"https://placehold.co/700x450?text=Paper+4","link":"#"},
+        {"title":"Jurnal E: Kebijakan Iklim","summary":"Analisis kebijakan iklim lokal.","image":"https://placehold.co/700x450?text=Paper+5","link":"#"},
+        {"title":"Jurnal F: Karbon Hutan","summary":"Peran hutan dalam menyerap karbon.","image":"https://placehold.co/700x450?text=Paper+6","link":"#"},
+        {"title":"Jurnal G: Energi Terbarukan","summary":"Potensi energi surya di desa.","image":"https://placehold.co/700x450?text=Paper+7","link":"#"},
+        {"title":"Jurnal H: Metana Peternakan","summary":"Reduksi emisi metana domestik.","image":"https://placehold.co/700x450?text=Paper+8","link":"#"},
+        {"title":"Jurnal I: Perubahan Curah Hujan","summary":"Model perubahan curah hujan.","image":"https://placehold.co/700x450?text=Paper+9","link":"#"},
+        {"title":"Jurnal J: Ekonomi Hijau","summary":"Analisis biaya manfaat transisi.","image":"https://placehold.co/700x450?text=Paper+10","link":"#"},
+        {"title":"Jurnal K: Infrastruktur Tahan Iklim","summary":"Desain infrastruktur adaptif.","image":"https://placehold.co/700x450?text=Paper+11","link":"#"},
+        {"title":"Jurnal L: Data Emisi Real-time","summary":"Sistem monitoring emisi perusahaan.","image":"https://placehold.co/700x450?text=Paper+12","link":"#"},
+        {"title":"Jurnal M: Perubahan Habitat","summary":"Dampak pada biodiversitas lokal.","image":"https://placehold.co/700x450?text=Paper+13","link":"#"},
+        {"title":"Jurnal N: Kebijakan Nasional","summary":"Rangkuman pojok kebijakan terbaru.","image":"https://placehold.co/700x450?text=Paper+14","link":"#"},
+        {"title":"Jurnal O: Edukasi & Literasi Iklim","summary":"Program literasi iklim di sekolah.","image":"https://placehold.co/700x450?text=Paper+15","link":"#"}
+      ]
+    }
+  },
+
+  "footer": {
+    "about": "BUMI adalah startup teknologi hijau yang berfokus pada solusi inovatif untuk mengatasi perubahan iklim.",
+    "contact": {
+      "email": "info@bumi.org",
+      "phone": "+62 812-3456-7890",
+      "address": "Medan, Indonesia"
+    },
+    "social": {
+      "instagram": "https://instagram.com/",
+      "twitter": "https://twitter.com/",
+      "tiktok": "https://tiktok.com/company/"
+    }
+  }
+}

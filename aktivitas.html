@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Aktivitas Kami - BUMI</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Aktivitas: 2 kolom maksimal, kartu lebih besar */
+    .activities-grid{
+      display:grid;
+      grid-template-columns:repeat(2, 1fr); /* ★ maksimal 2 per baris */
+      gap:1.5rem;
+      padding:2rem;
+    }
+
+    .activity-card{
+      background:#fff;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      overflow:hidden;
+      transition:transform .18s;
+      min-height:440px;                      /* ★ lebih besar */
+      display:flex;
+      flex-direction:column;
+    }
+
+    .activity-card img{
+      width:100%;
+      height:240px;                          /* ★ lebih besar */
+      object-fit:cover;
+    }
+
+    .activity-body{padding:1rem;flex:1;display:flex;flex-direction:column}
+    .activity-card h3{margin:0 0 .5rem 0;color:var(--forest-green)}
+    .activity-card p{color:#556b4a;margin-top:auto}
+    .back-link{display:inline-block;margin:1rem 2rem;color:var(--forest-green);text-decoration:none;font-weight:700}
+  </style>
+</head>
+<body>
+  <header class="navbar" id="topbar">
+    <div class="nav-container container">
+      <div class="nav-logo"><img src="https://placehold.co/150x50?text=BUMI+Logo" alt=""></div>
+      <nav><a href="index.html" class="back-link">← Kembali ke Beranda</a></nav>
+    </div>
+  </header>
+
+  <main style="padding-top:90px">
+    <div class="container">
+      <h1 style="color:var(--forest-green);margin:1rem 0">Aktivitas Kami</h1>
+      <p>Inisiatif dan program yang telah dilaksanakan.</p>
+      <div class="activities-grid" id="activities-grid"></div>
+    </div>
+  </main>
+
+<script>
+async function loadActivities(){
+  try{
+    const r = await fetch('data.json'); const j = await r.json();
+    const items = (j.sections && j.sections.activities && j.sections.activities.programs) || [];
+    const grid = document.getElementById('activities-grid');
+    grid.innerHTML = '';
+    items.forEach(it=>{
+      const el = document.createElement('div'); el.className='activity-card';
+      el.innerHTML = `<img src="${it.image}" alt="${it.title}" onerror="this.src='https://placehold.co/700x450?text=Activity'"><div class="activity-body"><h3>${it.title}</h3><div style="font-size:.95rem;color:#6b6b6b;margin:.4rem 0">📅 ${it.date} • ${it.impact}</div><p>${it.description}</p><a href="${it.link}" style="display:inline-block;margin-top:.6rem;color:var(--forest-green)">Pelajari lebih lanjut →</a></div>`;
+      grid.appendChild(el);
+    });
+  }catch(e){ console.error(e) }
+}
+document.addEventListener('DOMContentLoaded', loadActivities);
+</script>
+</body>
+</html>

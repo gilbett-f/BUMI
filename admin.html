@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Admin - Edit content</title>
+  <link rel="stylesheet" href="admin.css"/>
+</head>
+<body>
+  <div class="admin-container">
+    <div class="admin-header"><h1>🌍 Admin Site - Edit Konten</h1><p>Edit konten (data.json)</p></div>
+    <div class="admin-content container">
+      <div class="alert alert-success" id="success-alert">✅ Data berhasil disimpan! (Download akan muncul)</div>
+      <div class="alert alert-error" id="error-alert">❌ Error: JSON tidak valid.</div>
+
+      <div class="editor-section">
+        <h2 class="section-title">Content Editor (data.json)</h2>
+        <textarea id="json-editor" class="json-editor" placeholder="Loading data.json..."></textarea>
+        <div class="button-group">
+          <button class="btn btn-primary" onclick="validateJSON()">✓ Validasi JSON</button>
+          <button class="btn btn-success" onclick="saveJSON()">💾 Simpan & Download</button>
+          <button class="btn btn-secondary" onclick="resetJSON()">🔄 Reset</button>
+          <a class="btn btn-secondary" href="index.html" target="_blank">👁️ Preview</a>
+        </div>
+      </div>
+
+      <div class="info-box">
+        <h3>Panduan</h3>
+        <ul>
+          <li>Edit data di textarea lalu klik <strong>Validasi JSON</strong></li>
+          <li>Jika valid, klik <strong>Simpan & Download</strong> lalu replace file data.json di folder website</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<script>
+let originalJSON=null;
+async function loadJSON(){
+  try{
+    const r = await fetch('data.json');
+    const d = await r.json();
+    originalJSON = d;
+    document.getElementById('json-editor').value = JSON.stringify(d,null,2);
+  }catch(e){
+    showAlert('error','Gagal memuat data.json');
+    console.error(e);
+  }
+}
+function validateJSON(){
+  const txt = document.getElementById('json-editor').value;
+  try{
+    JSON.parse(txt);
+    showAlert('success','JSON valid!');
+    return true;
+  }catch(e){
+    showAlert('error','JSON tidak valid: '+e.message);
+    return false;
+  }
+}
+function saveJSON(){
+  if(!validateJSON()) return;
+  const txt = document.getElementById('json-editor').value;
+  const blob = new Blob([txt],{type:'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = 'data.json';
+  document.body.appendChild(a); a.click(); a.remove();
+  URL.revokeObjectURL(url);
+  showAlert('success','File data.json sudah di-download. Replace file lama di server dengan file ini.');
+}
+function resetJSON(){ if(confirm('Reset ke original?')){ document.getElementById('json-editor').value = JSON.stringify(originalJSON,null,2); showAlert('success','Di-reset ke original'); } }
+function showAlert(type,msg){
+  const s = document.getElementById('success-alert'), e = document.getElementById('error-alert');
+  s.classList.remove('show'); e.classList.remove('show');
+  if(type==='success'){ s.textContent = msg; s.classList.add('show'); setTimeout(()=>s.classList.remove('show'),5000); } else { e.textContent = msg; e.classList.add('show'); setTimeout(()=>e.classList.remove('show'),5000); }
+}
+document.addEventListener('DOMContentLoaded', loadJSON);
+</script>
+</body>
+</html>

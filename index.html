@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BUMI - Mitigasi Pemanasan Global</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header id="navbar" class="navbar">
+    <div class="nav-container">
+      <div class="nav-logo">
+        <img id="logo" src="https://placehold.co/150x50?text=BUMI+logo" alt="Logo"/>
+      </div>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#tentang" class="nav-link">Tentang Kami</a></li>
+        <li><a href="#pemanasan" class="nav-link">Pemanasan Global</a></li>
+        <li><a href="studi-kasus.html" class="nav-link">Studi Kasus</a></li>
+        <li><a href="aktivitas.html" class="nav-link">Aktivitas Kami</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="hero" class="hero-section">
+    <div class="hero-background-wrap">
+      <img id="hero-image" class="hero-background" src="assets/hero-background.jpg" alt="Hero image"
+           onerror="this.src='https://placehold.co/1600x900?text=gambar+error'"/>
+      <div class="hero-overlay"></div>
+    </div>
+
+    <div class="hero-inner container">
+      <div class="hero-left">
+        <div class="hero-acronym">BUMI</div>
+        <h1 id="hero-title" class="hero-title">Bersama Membangun Masa Depan yang Berkelanjutan</h1>
+        <p id="hero-description" class="hero-description">-</p>
+      </div>
+      <div class="hero-right"></div>
+    </div>
+  </section>
+
+  <!-- TENTANG KAMI -->
+  <section id="tentang" class="section about-section">
+    <div class="container about-grid">
+      <div class="about-left">
+        <h2 class="startup-name" id="startup-name">BUMI</h2>
+        <p class="startup-tagline" id="startup-tagline">singkatan startup</p>
+        <p class="about-short" id="about-short">
+          introduction tentang bumi
+        </p>
+        <p class="about-long" id="about-long">
+          Kami bekerja dengan sekolah, komunitas, dan mitra lokal untuk menanam pohon, mendukung energi terbarukan, dan edukasi tentang adaptasi iklim.
+        </p>
+      </div>
+      <div class="about-right">
+        <img id="about-image" src="https://placehold.co/800x600?text=Team+and+mission" alt="Tentang Kami" />
+      </div>
+    </div>
+  </section>
+
+  <!-- PEMANASAN GLOBAL -->
+  <section id="pemanasan" class="section pemanasan-section">
+    <div class="container">
+      <h2 class="section-title">Pemanasan Global</h2>
+
+      <!-- Definisi -->
+      <div class="definition-grid">
+        <div class="definition-left">
+          <h3>Apa Itu Pemanasan Global?</h3>
+          <p id="definition-text">Pemanasan global adalah fenomena...</p>
+        </div>
+        <div class="definition-right">
+          <img id="definition-image" src="https://placehold.co/800x500?text=Earth+temperature+graph" alt="Grafik Pemanasan Global" />
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-grid" id="stats-grid"></div>
+
+      <!-- Penyebab -->
+      <h3 class="subtitle">Penyebab Utama</h3>
+      <div class="causes-horizontal" id="causes-grid">
+        <!-- akan diisi JS -->
+      </div>
+
+      <!-- Pencegahan -->
+      <h3 class="subtitle">Pencegahan</h3>
+      <div class="importance-grid" id="importance-grid">
+        <!-- akan diisi JS -->
+      </div>
+
+      <!-- Mengapa perlu mencegah -->
+      <h3 class="subtitle">Mengapa Penting Mencegah</h3>
+      <div class="importance-grid" id="why-grid">
+        <!-- akan diisi JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>Tentang</h3>
+        <p id="footer-about">GOGOGOGO adalah startup ...</p>
+      </div>
+      <div>
+        <h3>Kontak</h3>
+        <p id="footer-contact">📧 email@example.com<br/>📱 +62 812-3456-7890</p>
+      </div>
+      <div>
+        <h3>Media Sosial</h3>
+        <div id="social-links"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="footer-year">2025</span> <span id="footer-company">BUMI</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
