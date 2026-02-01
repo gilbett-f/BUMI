@@ -1,13 +1,13 @@
 {
   "startup": {
     "name": "BUMI",
-    "tagline": "Bersama Melawan Perubahan Iklim",
+    "tagline": "BELAJAR UNTUK MITIGASI IKLIM",
     "logo": "logo/logo4.png",
-    "heroImage": "assets/hero-background.jpg",
-    "aboutImage": "assets/about-image.webp",
+    "heroImage": "assets/about-image.webp",
+    "aboutImage": "assets/real-about1.png",
     "heroTitle": "Bersama Membangun Masa Depan yang Berkelanjutan",
-    "heroDescription": "isi teks",
-    "longDescription": "BUMI berfokus pada solusi inovatif: reforestasi, monitoring emisi, edukasi, dan energi terbarukan. isi bagian ini bisa dilanjutkan sepanjang mungkin tanpa takut lewat lewat ke section lain, karna yaa disini pakenya innerHTML dari javascript dan udah di styling. bukan html biasa yang statis awokawokawokawokawokawokaowkaok. ini contohnya kalo dipanjangin. aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa tttttttttttttttttttttttttttttttttttttt uuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuuu kkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm. liat, sectionnya expand sendiri."
+    "heroDescription": "oleh: Harni Simamora, S.Pd",
+    "longDescription": "BUMI adalah website pembelajaran yang dirancang untuk membantu peserta didik, guru, dan masyarakat memahami Bumi sebagai sistem serta keterkaitannya dengan perubahan iklim. Melalui pendekatan ilmiah dan kontekstual, BUMI mengajak pengguna tidak hanya memahami masalah iklim, tetapi juga berperan dalam solusinya."
   },
 
   "sections": {
