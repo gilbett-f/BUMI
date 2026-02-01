@@ -58,8 +58,15 @@ body{
   padding-left:2.5rem;
   padding-right:1.25rem;
 }
-.nav-logo img{height:40px}
-.nav-menu{display:flex;gap:1.25rem;list-style:none}
+.nav-logo img {
+  height:80px
+}
+
+.nav-menu {
+  display:flex;
+  gap:1.25rem;
+  list-style:none
+}
 
 .nav-menu.active {
   display: flex;
